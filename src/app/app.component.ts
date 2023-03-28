@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Bienvenue sur le site de Guime !';
+  title = 'Bonjour';
+
+  isAdminValue(): void {
+    this.isAdmin = !this.isAdmin;
+  }
+
+  isAdmin: boolean = true;
 }
