@@ -13,4 +13,5 @@ export class AppComponent {
   }
 
   isAdmin: boolean = true;
+  displayGuestList = false;
 }

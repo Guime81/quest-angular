@@ -7,3 +7,28 @@
 
   <button (click)="isAdminValue()">Change status of User</button>
 </div>
+
+<h1 appHighLight>Raclette</h1>
+<ul>
+  <li>Pomme de terre</li>
+  <li>Fromage</li>
+  <li>Champignon</li>
+  <li>Cornichon</li>
+  <li>Alban</li>
+</ul>
+
+<ul *ngIf="displayGuestList">
+  <li>Albal</li>
+  <li>Samy</li>
+  <li>JB</li>
+  <li>Damien</li>
+  <li>Nicolas</li>
+</ul>
+
+<ul *appDisplayGuests="displayGuestList">
+  <li>Albal</li>
+  <li>Samy</li>
+  <li>JB</li>
+  <li>Damien</li>
+  <li>Nicolas</li>
+</ul>
