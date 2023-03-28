@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Bienvenue sur le site de Guime !';
+  title: string = 'Raclette party 🧀';
+
+  isThisIngredientVital: boolean = true;
+
+  isGuestListDisplayed: boolean = false;
+
+  songList: string[] = ['Alejandro', 'Ne me quitte pas', 'Le temps est bon'];
 }
