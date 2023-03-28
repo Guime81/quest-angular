@@ -1,7 +1,9 @@
 <h1 [ngClass]="{ redtitle: isAdmin }">{{ title }}</h1>
 <h1 [ngStyle]="{ backgroundColor: isAdmin ? 'red' : 'yellow' }">{{ title }}</h1>
 
-<button>View</button>
-<button *ngIf="isAdmin">Edit</button>
+<div class="center">
+  <button>View</button>
+  <button *ngIf="isAdmin">Edit</button>
 
-<button (click)="isAdminValue()">Change status of User</button>
+  <button (click)="isAdminValue()">Change status of User</button>
+</div>
