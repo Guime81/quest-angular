@@ -5,7 +5,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 })
 export class ShowMoviesDirective {
   @Input() set appShowMovies(showMovies: boolean) {
-    showMovies = false;
+    showMovies = true;
     if (showMovies) {
       this.vwRef.createEmbeddedView(this.tplRef);
     } else {
