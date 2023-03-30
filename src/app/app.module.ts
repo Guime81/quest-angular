@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { MyFormComponent } from './my-form/my-form.component';
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent],
+  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent],
