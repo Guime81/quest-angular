@@ -12,18 +12,14 @@
       type="email"
       [(ngModel)]="model.email"
       #email="ngModel"
+      email
       required
-      minlength="5"
-      maxlength="30"
     />
   </fieldset>
 
-  <!-- Message d'erreurs de title -->
-  <div *ngIf="email.errors">
+  <div *ngIf="myForm.submitted && email.errors">
     <span *ngIf="email.errors?.['required']">L'email est requis</span>
-    <span *ngIf="email.errors?.['email']"
-      >L'adresse email doit être valide</span
-    >
+    <span *ngIf="email.errors?.['email']">L'adresse email est invalide</span>
   </div>
 
   <fieldset>
@@ -35,19 +31,20 @@
       #firstname="ngModel"
       type="text"
       required
+      minlength="3"
+      maxlength="15"
     />
   </fieldset>
 
-  <!-- Message d'erreurs de quantity -->
-  <div *ngIf="firstname.errors">
+  <div *ngIf="myForm.submitted && firstname.errors">
     <span *ngIf="firstname.errors?.['required']"
       >Le champ firstname est requis</span
     >
     <span *ngIf="firstname.errors?.['minlength']"
-      >La longueur minimale doit être supérieure à 5</span
+      >Le firstname doit comporter au moins 3 caractères</span
     >
     <span *ngIf="firstname.errors?.['maxlength']"
-      >La longueur maximale doit être inférieure à 30</span
+      >Le firstname ne doit pas dépasser 15 caractères</span
     >
   </div>
 
@@ -60,48 +57,48 @@
       [(ngModel)]="model.lastname"
       #lastname="ngModel"
       required
+      minlength="3"
+      maxlength="15"
     />
   </fieldset>
 
-  <!-- Message d'erreurs de date -->
-  <div *ngIf="lastname.errors">
+  <div *ngIf="myForm.submitted && lastname.errors">
     <span *ngIf="lastname.errors?.['required']"
       >Le champ lastname est requis</span
     >
     <span *ngIf="lastname.errors?.['minlength']"
-      >La longueur minimale doit être supérieure à 5</span
+      >Le lastname doit comporter au moins 3 caractères</span
     >
     <span *ngIf="lastname.errors?.['maxlength']"
-      >La longueur maximale doit être inférieure à 30</span
+      >Le lastname ne doit pas dépasser 15 caractères</span
     >
   </div>
 
   <fieldset>
     <label for="password">Password</label>
     <input
-      id="passwordr"
+      id="password"
       name="password"
       type="password"
       [(ngModel)]="model.password"
       #password="ngModel"
       required
-      email
+      minlength="8"
+      maxlength="30"
     />
   </fieldset>
 
-  <!-- Message d'erreurs de contact -->
-  <div *ngIf="password.errors">
+  <div *ngIf="myForm.submitted && password.errors">
     <span *ngIf="password.errors?.['required']"
       >Le champ password est requis</span
     >
     <span *ngIf="password.errors?.['minlength']"
-      >La longueur minimale doit être supérieure à 5</span
+      >La longueur ne doit pas être inférieur à 8 caractères</span
     >
     <span *ngIf="password.errors?.['maxlength']"
-      >La longueur maximale doit être inférieure à 30</span
+      >La longueur ne doit pas dépasser 30 caractères</span
     >
   </div>
 
-  <button type="reset">Restaurer</button>
   <button type="submit">Sauvegarder</button>
 </form>
