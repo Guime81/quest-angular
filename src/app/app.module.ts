@@ -8,9 +8,11 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MyFormComponent } from './my-form/my-form.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent],
+  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent, DeveloperComponent, SkillComponent],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent],
