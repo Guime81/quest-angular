@@ -1,0 +1,7 @@
+<h2>Nos listes de cocktails</h2>
+
+<div *ngFor="let cocktail of cocktails" class="flex">
+  <h3>{{ cocktail.name }}</h3>
+  <p>{{ cocktail.price }}</p>
+  <img [src]="cocktail.image" alt="{{ cocktail.name }}" width="100" />
+</div>

@@ -11,9 +11,10 @@ import { MyFormComponent } from './my-form/my-form.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { CokctailListComponent } from './cokctail-list/cokctail-list.component';
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent, DeveloperComponent, SkillComponent, CreateOnomatopiaComponent],
+  declarations: [AppComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent, DeveloperComponent, SkillComponent, CreateOnomatopiaComponent, CokctailListComponent],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent],
