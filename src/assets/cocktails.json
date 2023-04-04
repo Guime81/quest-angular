@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Negroni Dominicana",
+        "price": 10,
+        "image": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/121190_origin.jpg"
+    },
+    {
+        "name": "Cuba Libre",
+        "price": 13,
+        "image": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/84246_origin-scaled-615x410.jpg"
+    },
+    {
+        "name": "Blue Hawaiian",
+        "price": 8,
+        "image": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/81667_origin-scaled-615x410.jpg"
+    }
+]
+
